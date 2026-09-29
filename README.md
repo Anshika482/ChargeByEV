@@ -51,36 +51,4 @@ As EV adoption accelerates, charging network operators face acute infrastructure
 * **Revenue Protection:** Identifying "Campers" (cars that are fully charged but occupying a stall), allowing operators to implement idle fees.
 
 ---
-
-## 🚀 5. How to Run Locally
-
-If you want to run this platform on your own machine:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Anshika482/ChargeByEV.git
-   cd ChargeByEV
-   ```
-2. **Install dependencies:**
-   ```bash
-   pip install streamlit pandas numpy plotly
-   ```
-3. **Generate the database:** (This will create the 250k row dataset locally)
-   ```bash
-   python generate_data.py
-   ```
-4. **Launch the NOC:**
-   ```bash
-   streamlit run app.py
-   ```
-
----
-
-## ☁️ 6. Deployment & Cloud Architecture
-The application is purely stateless and can be deployed instantly:
-
-* **Streamlit Community Cloud (Current Deployment):** Connected directly to GitHub. The app detects the missing `.csv` files (ignored via `.gitignore` to bypass GitHub limits) and builds the database into RAM on boot.
-* **Google Cloud Run / AWS Fargate:** Write a standard `Dockerfile` exposing port `8501`, build the image, and deploy. 
-
----
-*Built as a comprehensive Data Analytics & Engineering Portfolio Project.*
+LIVE DEMO LINK - https://chargebyev-ruwt6rkgyqf99gjfqgehyz.streamlit.app/Executive_Insights
