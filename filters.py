@@ -1,8 +1,15 @@
 import streamlit as st
 import pandas as pd
 
+import os
+import generate_data
+
 @st.cache_data
 def load_all_data():
+    if not os.path.exists('charging_sessions.csv'):
+        print('Data not found. Generating on the fly for cloud deployment...')
+        generate_data.generate_chargebyev_data()
+
     stations = pd.read_csv('stations.csv')
     chargers = pd.read_csv('chargers.csv')
     sessions = pd.read_csv('charging_sessions.csv')
