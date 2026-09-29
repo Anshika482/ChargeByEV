@@ -24,7 +24,7 @@ st.markdown("""
         border: 1px solid #333;
     }
     .cpi-box {
-        background-color: #151515;
+        background-color: #151515; color: #E0E0E0 !important;
         padding: 20px;
         border-radius: 8px;
         border: 1px solid #444;
@@ -178,8 +178,8 @@ if selected_stn:
     class_html_class = f"cat-{profile['CPI_Category'].split()[0]}"
 
     st.markdown(f"""
-    <div style='background-color:#1E1E1E; padding: 25px; border-radius:10px; border-left: 5px solid #888;'>
-        <h2 style='margin-top:0;'>{profile['station_name']} ({profile['station_id']})</h2>
+    <div style='background-color:#1E1E1E; color:#E0E0E0 !important; padding: 25px; border-radius:10px; border-left: 5px solid #888;'>
+        <h2 style='margin-top:0; color:#FFFFFF;'>{profile['station_name']} ({profile['station_id']})</h2>
         <p style='color:#bbb;'>{profile['city']}, {profile['area']} &nbsp;|&nbsp; Lat: {profile['latitude']}, Lon: {profile['longitude']} &nbsp;|&nbsp; Type: {profile['station_type']}</p>
         <p>Operational Status: <b>Active</b></p>
     </div>

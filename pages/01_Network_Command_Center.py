@@ -25,7 +25,8 @@ st.markdown("""
     .metric-card.negative { border-left-color: #F44336; }
     .metric-card.neutral { border-left-color: #FFC107; }
     .alert-card {
-        background-color: #2b1111;
+        color: #E0E0E0 !important;
+        background-color: #2b1111; color: #E0E0E0 !important;
         padding: 10px;
         border-radius: 5px;
         border-left: 4px solid #F44336;
@@ -142,7 +143,7 @@ with c5:
     else: h_color, h_text = "#F44336", "CRITICAL"
     
     st.markdown(f"""
-    <div style="background-color: #1a1a1a; color: #E0E0E0; border: 1px solid #333; padding: 15px; border-radius: 8px; text-align:center;">
+    <div style="background-color: #1a1a1a; color: #E0E0E0 !important; color: #E0E0E0; border: 1px solid #333; padding: 15px; border-radius: 8px; text-align:center;">
         <div style="color:#A0A0A0; font-size:12px;">NETWORK HEALTH SCORE</div>
         <div style="font-size:32px; font-weight:bold; color:{h_color}">{health_score:.1f}/100</div>
         <div style="font-size:12px; color:{h_color}">{h_text}</div>

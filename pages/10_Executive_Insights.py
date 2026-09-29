@@ -11,7 +11,7 @@ st.set_page_config(page_title="Executive Insights", layout="wide", page_icon="ðŸ
 
 st.markdown("""
     <style>
-    .insight-box { background-color: #1a1a1a; color: #E0E0E0; padding: 20px; border-radius: 8px; border-left: 4px solid #00BCD4; margin-bottom: 15px; font-size: 16px;}
+    .insight-box { background-color: #1a1a1a; color: #E0E0E0 !important; color: #E0E0E0; padding: 20px; border-radius: 8px; border-left: 4px solid #00BCD4; margin-bottom: 15px; font-size: 16px;}
     .insight-box b { color: #fff; }
     </style>
 """, unsafe_allow_html=True)
