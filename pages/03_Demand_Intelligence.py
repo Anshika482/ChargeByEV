@@ -13,11 +13,12 @@ st.set_page_config(page_title="Demand Intelligence", layout="wide", page_icon="ð
 
 st.markdown("""
     <style>
-    .kpi-card { background-color: #1E1E1E; padding: 15px; border-radius: 5px; border-left: 4px solid #00BCD4; margin-bottom: 10px; }
+    .kpi-card { background-color: #1E1E1E;
+        color: #E0E0E0; padding: 15px; border-radius: 5px; border-left: 4px solid #00BCD4; margin-bottom: 10px; }
     .compare-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 16px; }
     .compare-table th, .compare-table td { border: 1px solid #333; padding: 12px; text-align: left; }
     .compare-table th { background-color: #222; color: #00BCD4; }
-    .compare-table tr:nth-child(even) { background-color: #1a1a1a; }
+    .compare-table tr:nth-child(even) { background-color: #1a1a1a; color: #E0E0E0; }
     </style>
 """, unsafe_allow_html=True)
 

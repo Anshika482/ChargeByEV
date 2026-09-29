@@ -36,6 +36,7 @@ st.markdown("""
     }
     .stat-card {
         background-color: #1E1E1E;
+        color: #E0E0E0;
         padding: 1.5rem;
         border-radius: 10px;
         text-align: center;
@@ -66,6 +67,7 @@ st.markdown("""
     }
     .module-card {
         background-color: #1E1E1E;
+        color: #E0E0E0;
         padding: 1.5rem;
         border-radius: 10px;
         border-left: 4px solid #4CAF50;
@@ -114,7 +116,7 @@ st.markdown(f"""
     </div>
     <div class="stat-card">
         <div class="stat-label">Total Energy Dispensed</div>
-        <div class="stat-value">{total_energy:,.0f} <span style="font-size:1.2rem; color:#888;">kWh</span></div>
+        <div class="stat-value">{total_energy:,.0f} <span style="font-size:1.2rem; color:#A0A0A0;">kWh</span></div>
     </div>
     <div class="stat-card">
         <div class="stat-label">Cumulative Revenue</div>

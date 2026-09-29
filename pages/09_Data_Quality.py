@@ -6,7 +6,8 @@ st.set_page_config(page_title="Data Quality Validation", layout="wide", page_ico
 
 st.markdown("""
     <style>
-    .dq-card { background-color: #1E1E1E; padding: 20px; border-radius: 8px; border-left: 4px solid #F44336; margin-bottom: 15px; }
+    .dq-card { background-color: #1E1E1E;
+        color: #E0E0E0; padding: 20px; border-radius: 8px; border-left: 4px solid #F44336; margin-bottom: 15px; }
     .dq-card.clean { border-left-color: #4CAF50; }
     .dq-card.warning { border-left-color: #FF9800; }
     </style>

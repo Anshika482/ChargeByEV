@@ -16,6 +16,7 @@ st.markdown("""
     <style>
     .metric-card {
         background-color: #1E1E1E;
+        color: #E0E0E0;
         padding: 15px;
         border-radius: 8px;
         border-left: 4px solid #4CAF50;
@@ -103,9 +104,9 @@ def render_metric(label, curr, prev, format_str, invert_color=False):
         
     st.markdown(f"""
     <div class="metric-card {color_class}">
-        <div style="color:#888; font-size:14px; text-transform:uppercase;">{label}</div>
-        <div style="font-size:24px; font-weight:bold;">{format_str.format(curr)}</div>
-        <div style="font-size:12px; margin-top:5px;">
+        <div style="color:#A0A0A0; font-size:14px; text-transform:uppercase;">{label}</div>
+        <div style="font-size:24px; font-weight:bold; color:#FFFFFF;">{format_str.format(curr)}</div>
+        <div style="font-size:12px; margin-top:5px; color:#B0BEC5;">
             {indicator} {abs(pct_change):.1f}% {arrow} vs prev 30d ({format_str.format(prev)})
         </div>
     </div>
@@ -141,8 +142,8 @@ with c5:
     else: h_color, h_text = "#F44336", "CRITICAL"
     
     st.markdown(f"""
-    <div style="background-color: #1a1a1a; border: 1px solid #333; padding: 15px; border-radius: 8px; text-align:center;">
-        <div style="color:#888; font-size:12px;">NETWORK HEALTH SCORE</div>
+    <div style="background-color: #1a1a1a; color: #E0E0E0; border: 1px solid #333; padding: 15px; border-radius: 8px; text-align:center;">
+        <div style="color:#A0A0A0; font-size:12px;">NETWORK HEALTH SCORE</div>
         <div style="font-size:32px; font-weight:bold; color:{h_color}">{health_score:.1f}/100</div>
         <div style="font-size:12px; color:{h_color}">{h_text}</div>
     </div>

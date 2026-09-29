@@ -13,7 +13,8 @@ st.set_page_config(page_title="Geo Intelligence", layout="wide", page_icon="🗺
 
 st.markdown("""
     <style>
-    .cluster-card { background-color: #1E1E1E; padding: 15px; border-radius: 8px; border-left: 4px solid #4CAF50; margin-bottom: 10px; }
+    .cluster-card { background-color: #1E1E1E;
+        color: #E0E0E0; padding: 15px; border-radius: 8px; border-left: 4px solid #4CAF50; margin-bottom: 10px; }
     .cluster-card.risk { border-left-color: #F44336; }
     .cluster-card.pressure { border-left-color: #FF9800; }
     .cluster-card.underutil { border-left-color: #2196F3; }

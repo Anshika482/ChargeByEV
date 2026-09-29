@@ -12,7 +12,8 @@ st.set_page_config(page_title="Revenue Intelligence", layout="wide", page_icon="
 
 st.markdown("""
     <style>
-    .metric-card { background-color: #1E1E1E; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9800; margin-bottom: 15px; }
+    .metric-card { background-color: #1E1E1E;
+        color: #E0E0E0; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9800; margin-bottom: 15px; }
     </style>
 """, unsafe_allow_html=True)
 

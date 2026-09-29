@@ -12,7 +12,8 @@ st.set_page_config(page_title="Customer & Vehicle Intelligence", layout="wide", 
 
 st.markdown("""
     <style>
-    .kpi-card { background-color: #1E1E1E; padding: 15px; border-radius: 8px; border-left: 4px solid #E91E63; margin-bottom: 15px; }
+    .kpi-card { background-color: #1E1E1E;
+        color: #E0E0E0; padding: 15px; border-radius: 8px; border-left: 4px solid #E91E63; margin-bottom: 15px; }
     </style>
 """, unsafe_allow_html=True)
 

@@ -17,6 +17,7 @@ st.markdown("""
     <style>
     .kpi-box {
         background-color: #1E1E1E;
+        color: #E0E0E0;
         padding: 20px;
         border-radius: 8px;
         margin-bottom: 10px;
@@ -192,7 +193,7 @@ if selected_stn:
         st.markdown(f"""
         <div class='cpi-box'>
             <div style='color:#aaa; font-size: 14px; text-transform:uppercase;'>Charging Pressure Index (CPI)</div>
-            <div style='font-size: 48px; font-weight: bold;'>{profile['CPI']} <span style='font-size:16px; font-weight:normal; color:#888;'>/100</span></div>
+            <div style='font-size: 48px; font-weight: bold;'>{profile['CPI']} <span style='font-size:16px; font-weight:normal; color:#A0A0A0;'>/100</span></div>
             <div class='{class_html_class}' style='font-size:18px;'>{profile['CPI_Category']}</div>
         </div>
         """, unsafe_allow_html=True)

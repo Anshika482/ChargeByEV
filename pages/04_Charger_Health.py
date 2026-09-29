@@ -15,7 +15,8 @@ st.markdown("""
     .severity-High { color: #F44336; font-weight: bold; }
     .severity-Medium { color: #FF9800; font-weight: bold; }
     .severity-Low { color: #FFEB3B; font-weight: bold; }
-    .metric-card { background-color: #1E1E1E; padding: 15px; border-radius: 5px; border-left: 4px solid #9C27B0; margin-bottom: 10px; }
+    .metric-card { background-color: #1E1E1E;
+        color: #E0E0E0; padding: 15px; border-radius: 5px; border-left: 4px solid #9C27B0; margin-bottom: 10px; }
     </style>
 """, unsafe_allow_html=True)
 

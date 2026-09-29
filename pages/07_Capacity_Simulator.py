@@ -11,7 +11,7 @@ st.set_page_config(page_title="Capacity Expansion Simulator", layout="wide", pag
 
 st.markdown("""
     <style>
-    .state-card { background-color: #1a1a1a; padding: 20px; border-radius: 8px; border: 1px solid #333; height: 100%; }
+    .state-card { background-color: #1a1a1a; color: #E0E0E0; padding: 20px; border-radius: 8px; border: 1px solid #333; height: 100%; }
     .header-current { color: #FF9800; margin-top: 0; }
     .header-scenario { color: #4CAF50; margin-top: 0; }
     .metric-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333; font-size: 16px; }
